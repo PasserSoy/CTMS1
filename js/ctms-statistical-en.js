@@ -6,7 +6,8 @@ require.config({
     ,"chart":"./ctms-statistical-chart"
   },
   shim:{
-    "table":['layui']
+    "table":['layui'],
+    "chart":['table']
   }
 });
 require(['index','table','chart'],function(){

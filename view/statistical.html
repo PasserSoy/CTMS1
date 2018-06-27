@@ -14,10 +14,10 @@
   <div class="ctms-menu"></div>
   <div class="cont">
     <div class="cont-header">
-      <a data-page="voltagepage" class="statelink active">电池电压曲线</a>
+      <a data-page="voltagepage" class="statelink active">电池电流曲线</a>
       <a data-page="temperaturepage" class="statelink">温度曲线</a>
     </div>
-    <!-- 电池电压 -->
+    <!-- 电池电流 -->
     <div class="page" id="voltagepage">
       <div class="tool">
         <form action="" class="layui-form myform" action="" lay-filter="myform">
@@ -26,7 +26,7 @@
             <div class="layui-input-inline myselect">
               <select name="group_no" lay-filter="serial">
                   <option value="0">无</option>
-                  <option value="1">群号1</option>
+                  <option value="1" selected>群号1</option>
                   <option value="2">群号2</option>
                   <option value="3">群号3</option>
                 </select>
@@ -37,26 +37,22 @@
                   <option value="0">无</option>
                   <option value="1">组号1</option>
                   <option value="2">组号2</option>
-                  <option value="3">组号3</option>
+                  <option value="3" selected>组号3</option>
                 </select>
             </div>
             <label class="layui-form-label">选取时间范围</label>
             <div class="layui-input-inline choosetime">
-              <input type="text" name="start" value="1529549086149">
-              <input type="text" name="end" value="1529549128430">
-              <!-- <input type="text" class="layui-input choosetime" id="chooseTime" placeholder="请选取时间范围" autocomplete="off"> -->
+              <input type="hidden" name="start">
+              <input type="hidden" name="end">
+              <input type="text" class="layui-input choosetime" id="chooseTime" readonly placeholder="请选取时间范围" autocomplete="off">
             </div>
             <button class="layui-btn layui-btn-warm" lay-submit lay-filter="*">立即查询</button>
           </div>
         </form>
       </div>
       <div class="charts">
-        <h1 class="tit">当前电压</h1>
+        <h1 class="tit">当前电流</h1>
         <div class="echart" id="voltage"></div>
-      </div>
-      <div class="charts">
-        <h1 class="tit">所有监控点电压</h1>
-        <div class="echart" id="allvoltage"></div>
       </div>
     </div>
     <!-- 温度 -->

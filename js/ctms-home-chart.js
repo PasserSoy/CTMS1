@@ -109,7 +109,7 @@ $.ajax({
       }]
     });
   }
-})
+});
 $(window).resize(function () {
   myChart1.resize();
 });

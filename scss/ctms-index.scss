@@ -1,6 +1,7 @@
 // 主题颜色
 $theme-color:#ea5504;
 $btn-color:#f89e53;
+$echart-color:rgb(42, 215, 238);
 // 初始化
 html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6 { margin: 0; padding: 0 }
 h1,h2,h3,h4,h5,h6 { font-size: 100%; font-weight: normal }
@@ -203,4 +204,14 @@ body .layui-form-select dl dd.layui-this {
 }
 .layui-form-select dl dd, .layui-form-select dl dt {
   line-height: 25px;
+}
+// .echart样式
+.echartData {
+  * {
+    font-style: normal;
+    font-size: 12px;
+  }
+  i {
+    color: $echart-color;
+  }
 }

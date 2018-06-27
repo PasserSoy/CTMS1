@@ -1,0 +1,22 @@
+/* excel样式 */
+.excel {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 60px;
+  background-color: #fff;
+  z-index: 9;
+  .tool {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #eff3f6;
+  }
+  .mytablediv {
+    text-align: center;
+    padding: 30px;
+  }
+}
